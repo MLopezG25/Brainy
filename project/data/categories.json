@@ -1,0 +1,68 @@
+[
+  {
+    "category": "Música",
+    "subcategories": [
+      "Compositor",
+      "Productor",
+      "Intérprete",
+      "Banda",
+      "Álbum",
+      "Canción"
+    ]
+  },
+  {
+    "category": "Cine",
+    "subcategories": [
+      "Director",
+      "Actor",
+      "Película",
+      "Saga"
+    ]
+  },
+  {
+    "category": "Literatura",
+    "subcategories": [
+      "Escritor",
+      "Libro",
+      "Novela",
+      "Saga literaria"
+    ]
+  },
+  {
+    "category": "Arte",
+    "subcategories": [
+      "Pintor",
+      "Cuadro",
+      "Escultura"
+    ]
+  },
+  {
+    "category": "Historia",
+    "subcategories": [
+      "Personaje histórico",
+      "Evento histórico"
+    ]
+  },
+  {
+    "category": "Videojuegos",
+    "subcategories": [
+      "Videojuego",
+      "Saga",
+      "Personaje"
+    ]
+  },
+  {
+    "category": "Ciencia",
+    "subcategories": [
+      "Científico",
+      "Teoría",
+      "Descubrimiento"
+    ]
+  },
+  {
+    "category": "General",
+    "subcategories": [
+      "General"
+    ]
+  }
+]

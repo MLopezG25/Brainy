@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Miles Davis",
+    "description": "trompetista legendario y genio",
+    "category": "Música",
+    "subcategory": "Intérprete"
+  },
+  {
+    "title": "The Godfather",
+    "description": "Famosa película de la Mafia",
+    "category": "Cine",
+    "subcategory": "Película"
+  },
+  {
+    "title": "1984",
+    "description": "novela distópica",
+    "category": "Literatura",
+    "subcategory": "Libro"
+  }
+]
