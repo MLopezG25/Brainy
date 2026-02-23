@@ -11,26 +11,26 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         db_path = os.path.join(settings.BASE_DIR, "db.sqlite3")
 
-        # 1. Borrar base de datos
+        # Borrar base de datos
         if os.path.exists(db_path):
             os.remove(db_path)
             self.stdout.write(self.style.WARNING("Database deleted"))
         else:
             self.stdout.write(self.style.WARNING("Database not found, skipping delete"))
 
-        # 2. Migraciones
+        # Migraciones
         call_command("makemigrations")
         call_command("migrate")
         self.stdout.write(self.style.SUCCESS("Database migrated"))
 
-        # 3. Cargar categorías
+        # Cargar categorías
         categories_file = os.path.join(settings.BASE_DIR, "data", "categories.json")
         if os.path.exists(categories_file):
             call_command("load_categories", categories_file)
         else:
             self.stdout.write(self.style.ERROR("categories.json not found"))
 
-        # 4. Cargar entries de prueba (si existe)
+        # Cargar entries de prueba (si existe)
         entries_file = os.path.join(settings.BASE_DIR, "data", "entries.json")
         if os.path.exists(entries_file):
             call_command("import_json", entries_file)

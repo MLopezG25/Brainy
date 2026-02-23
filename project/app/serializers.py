@@ -17,6 +17,11 @@ class AttachmentSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 class EntrySerializer(serializers.ModelSerializer):
+    attachments = AttachmentSerializer(
+        many=True,
+        read_only=True,
+        source="attachment_set"
+    )
     class Meta:
         model = Entry
         fields = "__all__"
